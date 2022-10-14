@@ -1,0 +1,6 @@
+{$PIHOLE_DOMAIN}:6080 {
+    tls {$CLOUDFLARE_EMAIL} {
+        dns cloudflare {$CLOUDFLARE_API_TOKEN}
+    }
+    reverse_proxy pihole:80
+}
