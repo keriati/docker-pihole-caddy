@@ -31,7 +31,7 @@ services:
     image: slothcroissant/caddy-cloudflaredns:2.10.2
     container_name: pihole-caddy
     ports:
-      - "80:6080"
+      - "443:6080"
     volumes:
       - ${APP_DIR}/caddy:/etc/caddy
       - caddy_data:/data

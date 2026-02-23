@@ -1,4 +1,4 @@
-{$PIHOLE_DOMAIN}:6080 {
+{$PIHOLE_DOMAIN}:443 {
     tls {$CLOUDFLARE_EMAIL} {
         dns cloudflare {$CLOUDFLARE_API_TOKEN}
     }
